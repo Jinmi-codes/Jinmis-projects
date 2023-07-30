@@ -1,0 +1,27 @@
+$colors:(
+    "breeze":#f5cb69,
+    "cashier":#96d83a,
+    "dusk":#c14594,
+   "echo":#4eb4b2,
+    "envoyer":#f56d5c,
+    "jetstream":#7f8af6,
+    "nova":#5da8e3,
+    "octane":#d35a53,
+    "pint":#ffd82a,
+    "sail":#54c6f8,
+    "sanctum":#396d84,
+    "scout":#f56463,
+    "social":#e8a8c7,
+    "spark":#a89afc,
+    "telescope":#5050cc,
+    "valet":#7e6bd7,
+    
+
+
+);
+@each $key, $val in $colors {
+    .card-#{$key}{
+        background-color: $val;
+    }
+}
+

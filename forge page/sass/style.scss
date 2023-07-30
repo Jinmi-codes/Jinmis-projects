@@ -1,0 +1,536 @@
+@import 'variables';
+@import 'queries';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: url('../images/dots-6b14a7af.svg');
+}
+
+.main-nav{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    .primary-grid{
+        display: grid;
+        grid-template-columns: 1fr 17fr;
+        .nav-item{
+            justify-content: flex-end;
+            align-items: baseline;
+            gap: 20px;
+            div{
+                border: 1px solid $vaporblue;
+                color: $vaporblue;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 10px 30px;
+                
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.scale-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    overflow: hidden;
+    .hero-grid{
+        overflow: hidden;
+        .text-container{
+            z-index: 1;
+            p{
+                max-width: 28rem;
+                font-size: 20px;
+                margin: 30px 0px;
+                
+            }
+            h1{
+                max-width: 40rem;
+            }
+            .duo-span{
+                display: flex;
+                align-items: baseline;
+                gap: 10px;
+                span{
+                    padding: 15px 40px;
+                    font-size: 16px;
+                    background: white;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                }
+                .start-span{
+                    padding: 15px 40px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    background: $vaporblue;
+                }
+                
+            }
+        }
+        .cube-container{
+            overflow: hidden;
+        
+            img{
+                position: absolute;
+                right: -1rem;
+                bottom: -15rem;
+            }
+            
+            
+        }
+    }
+}
+
+.features-section{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    .features-item{
+        .text-containerF{
+            h1{
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+                max-width: 33rem;
+            }
+           
+            span{
+                color: $vaporblue;
+            }
+        }
+        .main-gridF{
+            display: grid;
+            gap: 30px;
+            row-gap: 70px;
+            margin-top: 60px;
+            margin-bottom: auto;
+
+            .gridF-normal{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    max-width: 20rem;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                img{
+                    width: 50px;
+                }
+                p{
+                    color: rgb(38, 44, 65);
+                    max-width: 29rem;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .gridF-special{
+                display: grid;
+                padding: 30px;
+                justify-content: start;
+                background: #f1effe;
+                gap: 30px;
+                
+                div{
+                    img{
+                        max-width: 150px;
+                    }
+                    h1{
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+       
+
+}
+
+
+}
+
+.vapor-ss-img{
+    max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    
+        
+    #img-cont{
+        
+        background-color: $vaporblue;
+        
+        border-radius: 10px;
+      
+
+        
+        img{
+            border-radius: 10px;
+            position: relative;
+            
+           max-width: 100%;
+           height: auto;
+            padding: 1rem;
+        }
+    }
+}
+
+.multiple-grid-section{
+
+    max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    .multi-grid-main{
+        display: grid;
+        gap: 35px;
+        row-gap: 40px;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            img{
+                width: 40px;
+            }
+            h1{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                max-width: 24rem;
+                color: rgb(38,44,65);
+            }
+        }
+    }
+}
+
+.cubes-section{
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+    img{
+        max-width: 110%;
+    }
+}
+
+.video-section{
+    max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    .VS-main-grid{
+        display: grid;
+        .text-containerV{
+            h1{
+                font-size: 3rem;
+                font-weight: 700;
+                max-width: 36rem;
+            }
+            p{
+                font-size:20px;
+                font-weight:400;
+                max-width: 36rem;
+            }
+            div{
+                font-size: 16px;
+                font-weight: 700;
+                display: flex;
+                gap: 20px;
+                align-items: baseline;
+                .first-span{
+                    background: white;
+                    padding: 15px 40px;
+                    border-radius: 5px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+       .img-containerV{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            div{
+                max-width: 28rem;
+                padding: 1rem;
+                img{
+                    max-width: 100%;
+                    height: auto;
+
+                }
+            }
+        
+       } 
+    }
+
+}
+
+.offers-section{
+     max-width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    .plans{
+        display: grid;
+        grid-template-columns: repeat(1 100%);
+        .text-containerP{
+             h1{
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                max-width: 40rem;
+            }
+            .blue-h1{
+                max-width: 48rem;
+                color: $vaporblue;
+            }
+        }
+       
+    }
+    .main-gridP{
+        margin-top: 30px;
+        display: flex;
+        
+        max-width: 100%;
+        gap: 50px;
+        .sand-box{
+            background-image: linear-gradient(79.74deg, rgba(241, 238, 255, 0.9) 8.07%, rgba(241, 238, 255, 0) 100%);
+            padding: 40px;
+            border-radius: 10px;
+           .inner-box{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                .t-container{
+                  margin-bottom: -0px;
+                    .SiC{
+                        display: block;
+                        margin-top: 50px;
+                        div{
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+
+                            img{
+                               max-width: 100%;
+                               height: auto;
+                            }
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    h1{
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                }
+                .price-info{
+                    margin-top: -100px;
+                    h1{
+                        font-size: 56px;
+                        font-weight: 700;
+                    }
+                    div{
+                        background: $vaporblue;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 700;                                         
+                        padding: 20px;
+                        text-align: center;
+                        border-radius: 10px;
+                       width: 200px;
+                    }
+                }
+           }
+        }
+        .Monthly{
+            background-image: linear-gradient(79.74deg, rgba(241, 238, 255, 0.9) 8.07%, rgba(241, 238, 255, 0) 100%);
+            padding: 40px;
+            border-radius: 10px;
+           .inner-box{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                .t-container{
+                  margin-bottom: -0px;
+                    .SiC{
+                        display: block;
+                        margin-top: 50px;
+                        div{
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+
+                            img{
+                               max-width: 100%;
+                               height: auto;
+                            }
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    h1{
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                }
+                .price-info{
+                    margin-top: -100px;
+                    h1{
+                        span{
+                            font-size: 16px;
+                        }
+                        font-size: 56px;
+                        font-weight: 700;
+                    }
+                    
+                    div{
+                        background: $vaporblue;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 20px;
+                        text-align: center;
+                        border-radius: 10px;
+                       width: 200px;
+                    }
+                }
+           }
+        }
+        .Annual{
+            background-color: #30a5e6;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+           .inner-box{
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                .t-container{
+                  margin-bottom: -0px;
+                    .SiC{
+                        display: block;
+                        margin-top: 50px;
+                        div{
+                            display: flex;
+                            gap: 20px;
+                            align-items: center;
+
+                            img{
+                               max-width: 100%;
+                               height: auto;
+                            }
+                            span{
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    h1{
+                        font-weight: 700;
+                        font-size: 24px;
+                    }
+                }
+                .price-info{
+                    margin-top: -100px;
+                    h1{
+                        span{
+                            font-size: 16px;
+                        }
+                        font-size: 56px;
+                        font-weight: 700;
+                    }
+                    div{
+                        background: #262c41;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 20px;
+                        text-align: center;
+                        border-radius: 10px;
+                       width: 200px;
+                    }
+                }
+           }
+        }
+    }
+}
+
+#footerV{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+
+    .main-footer{
+        margin-top: 250px;
+        .main-grid{
+            display: grid;
+            gap: 50px;
+            
+            .text-container1{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            .text-container2{
+                display: flex;
+                flex-direction: column;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        .img-containerF{
+            margin-top: 130px;
+            max-width: 100%;
+            
+            img{
+                max-width: 100%;
+                
+            }
+        }
+        p{
+            margin-top: 150px;
+            text-align: center;
+        }
+    }
+
+}

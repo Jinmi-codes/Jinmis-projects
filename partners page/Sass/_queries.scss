@@ -1,0 +1,130 @@
+@media (max-width:640px){
+    .hero-container{
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        gap: 0;
+        img{
+            max-width: 20rem;
+            transform: translateX(100%);
+            position: absolute;
+        }
+    }
+    .evolveDiv{
+        .text-container{
+            button{
+                width: 100%;
+            }
+        }
+    }
+    
+
+}
+
+@media (min-width:640px){
+    .hero-container{
+        display: flex;
+    
+
+        .text-container{
+            z-index: 2;
+        }
+        img{
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            height: 100%;
+            display: block;
+          
+            flex: 0 1 auto;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            z-index: 0;
+            right: 0px;
+            top: 0px;
+            position: absolute;
+            transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        }
+    }
+    
+    .help-section{
+        .main-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width:765px){
+    .byte{
+        .main-flex{
+            grid-template-columns:1fr ;
+        }
+    }
+    .Featured-partners{
+        .main-grid{
+            display: grid;
+            grid-template-columns: 1fr ;
+        }
+    }
+
+    .evolveDiv{
+        display: grid;
+        grid-template-columns:   1fr;
+        .img-container{
+            display: none;
+        }
+    }
+
+    .main-footer{
+        
+        display: grid;
+        grid-template-columns:1fr;
+        }
+}
+
+
+@media (min-width:765px){
+    .byte{
+        .main-flex{
+            
+            grid-template-columns: 1fr 1fr;
+        }
+
+    }
+    .Featured-partners{
+        .main-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .evolveDiv{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .img-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .main-footer{
+        
+        display: grid;
+        grid-template-columns: 2fr  1fr 1fr 1fr;
+        }
+}
+
+@media (min-width:1024px){
+    .help-section{
+        .main-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

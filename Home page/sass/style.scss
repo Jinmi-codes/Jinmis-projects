@@ -1,0 +1,629 @@
+@import 'variables';
+@import 'animations';
+@import 'queries';
+@import 'config';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+  
+}
+.vapor{
+    background: $laravelRed;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    a{
+        color: white;
+    }
+}
+
+.nav-container{
+    align-items:baseline;
+    justify-content: space-evenly;
+    ul{
+        list-style: none;
+        
+    }
+    .documentation{
+        width: auto;
+        height: auto;
+
+        border: 1px solid $laravelRed;
+        color: $laravelRed;
+        text-align: center;
+    }
+}
+
+.red-circle{
+    background-image: radial-gradient(50% 50% at 50% 50%,#EB4432 0%,rgba(255,255,255,0) 100%);
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    left: -20%;
+    top: -6rem;
+    opacity: .15;
+    
+}
+
+.hov-box{
+    color: $laravelRed;
+    position: fixed;
+    left: 10%;
+    
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.hov-box2{
+    color: $laravelRed;
+    position: absolute;
+    right: 28%;
+    transform: translatey(-2rem);
+  
+}
+
+.hov-box3{
+    color: $laravelRed;
+    position: absolute;
+    right: 16%;
+    transform: translatey(-8rem);
+  
+}
+.Hero-section{
+    margin-top: 100px;
+
+    .hero{
+        h1{
+            max-width: 48rem;
+            margin: 0 auto;
+           
+            span{
+                color: $laravelRed;
+            }
+        }
+        p{
+            max-width: 36rem;
+            margin: 0 auto;
+        }
+        div{
+            max-width: 26rem;
+            margin: 0 auto;
+            
+            span{
+                
+    
+                border: 1px solid $laravelRed;
+                color: $laravelRed;
+                margin-top: 15px;
+            }
+            .start{
+                background: $laravelRed;
+                color: white;
+            }
+        }
+    }
+}
+
+
+.affiliate-section{
+    margin-top: 150px;
+    .img-container{
+        column-gap: 2.5rem;
+        overflow: hidden;
+        img{
+           max-width: 100%;
+           vertical-align: middle;
+            
+        }
+    }
+    
+}
+
+
+.duoCard-section{
+    margin-top: 200px;
+    position: relative;
+    .rect-bg{
+        overflow: hidden;
+    }
+   
+    .red-circle2{
+        background-image: radial-gradient(50% 50% at 50% 50%,#EB4432 0%,rgba(255,255,255,0) 100%);
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        top: 0%;
+        right: 20%;
+
+        
+        opacity: .2;
+    
+       
+    .container{
+        overflow: hidden;
+        
+    }
+    
+        
+        
+    }
+    .text-cont{
+        text-align: start;
+        flex-direction: column;
+       
+        p{
+            
+            font-size: 1.2rem;
+            text-align: start;
+        }
+        a{
+            width: 30rem;
+            text-decoration: none;
+            color: $laravelRed
+        }
+        .red-box{
+            width: auto;
+            border: 1px solid $laravelRed;
+        }
+        
+    }
+    img{
+        transform: rotate(1deg);
+        transform: translateX(rem);
+    }
+
+    .api-card{
+        margin-top: 200px;
+        p{
+            font-size: 1.1rem;
+            font-weight: 100;
+            text-align: start;
+        }
+    }
+}
+
+.multi-section{
+    position: relative;
+    overflow: hidden;
+    .red-circle3{
+        background-image: radial-gradient(50% 50% at 50% 50%,#EB4432 0%,rgba(255,255,255,0) 100%);
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    right: -20%;
+    top: 0;
+    opacity: .15;
+    }
+    margin-top: 150px;
+    .enter-scale{
+        max-width: 1280px;
+        width: 100%;
+        h1{
+            max-width: 32rem;
+        }
+        .amazing-grid{
+            display: grid;
+            gap: 15px;
+            margin-top: 50px;
+            div{
+                svg{
+                    width: 2rem;
+                }
+                h1{
+                    font-size: 1.3rem;
+                }
+                p{
+                    font-size: 0.1;
+                    color: #5b5454;
+                }
+            }
+        }
+    }
+}
+
+.solo-grid{
+    margin-top: 150px;
+    .rect-bg{
+
+        overflow: hidden;
+    }
+    .text-cont{
+        text-align: start;
+        flex-direction: column;
+       
+        p{
+            
+            font-size: 1.2rem;
+            text-align: start;
+        }
+        a{
+            width: 30rem;
+            text-decoration: none;
+            color: $laravelRed
+        }
+        .red-box2{
+            width: auto;
+            border: 1px solid $laravelRed;
+        }
+        
+}
+}
+
+
+
+
+
+
+.packages-section{
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 200px;
+    max-width: 1280px;
+    .text-container{
+        max-width: 36rem;
+        h1{
+            font-weight: 700;
+
+        }
+        p{
+          color:  #7c7b7b;
+          margin-top: 1.4rem;
+        }
+    }
+    .first-grid{
+            margin-top: 40px;
+            gap: 30px;
+            display: grid;
+            
+            
+           a{
+            border: 1px solid rgba(0,0,0,0.1 );
+            padding: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: inherit;
+            display: grid;
+            gap: 13px;
+            grid-template-columns: 1fr 10fr;
+            grid-auto-rows: minmax(20px, auto);
+            padding-left: 10px;
+            margin-bottom: auto;
+            
+            div{
+                grid-template-columns: repeat(1,100%);
+                .blue{
+                    background: #30c7f2;
+                }
+                div{
+                    background: #29ba8c;
+                    text-align: center;
+                    width: 50px;
+                    line-height: 50px;
+                    border-radius: 10px;
+                    img{
+                        width: 30px;
+                    }
+                }
+                h1{
+                    font-size: 16px;
+                }
+                p{
+                    color: rgb(86, 84, 84);
+                    font-size: 14px;
+                }
+            }
+           }
+        }
+
+    .second-grid{
+        margin-top: 40px;
+        gap: 30px;
+        display: grid;
+        
+        a{
+            border: 1px solid rgba(0,0,0,0.1 );
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: inherit;
+            display: grid;
+            gap: 13px;
+            grid-template-columns: 1fr 10fr;
+            grid-auto-rows: minmax(20px,auto);
+            padding-left: 10px;
+            margin-bottom: auto;
+           
+            div{
+                
+                grid-template-columns: repeat(1,100%);
+               
+                
+                .blue{
+                    background: #30c7f2;
+                }
+                div{
+                  
+                    text-align: center;
+                    width: 50px;
+                    line-height: 50px;
+                    border-radius: 10px;
+                    img{
+                        width: 30px;
+                    }
+                }
+                h1{
+                    font-size: 16px;
+                }
+                p{
+                    color: rgb(86, 84, 84);
+                    font-size: 14px;
+                }
+            }
+           }
+        
+    }
+}
+
+
+.devs-section{
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 170px;
+    max-width: 1280px;
+
+    
+    h1{
+        max-width:50rem;
+        text-align: center;
+    }
+    .main-grid{
+        display: grid;
+        column-gap: 1.25rem;
+        row-gap: 0.8rem;
+        height: auto;
+        grid-auto-rows: minmax(0px,auto);
+        margin-bottom: auto;
+        margin-top: 40px;
+        .grid-item{
+            border: 1px solid rgba(0,0,0,0.1 );
+        }
+        div{
+            display: grid;
+            row-gap: 10px;
+            padding: 15px;
+            padding-bottom: 10px;
+            height: auto;
+            margin-bottom: auto;
+            h1{
+                font-size: 16px;
+                text-align: start;
+            }
+            div{
+                display: grid;
+                grid-template-columns: 1fr 7fr;
+                grid-auto-rows: minmax(0px,auto);
+                margin-bottom: auto;
+                gap: 10px;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+                div{
+                    display: grid;
+                    grid-template-columns: repeat(1,100%);
+                    grid-auto-rows: minmax(0px,auto);
+                    font-size: 12px;
+                    margin-bottom: auto;
+                    gap: 0;
+                    padding: 0;
+                    height: auto;
+                    p{
+                        margin-bottom: auto;
+                        a{
+                            text-decoration: none;
+                            color: $laravelRed;
+                        }
+                    }
+                    h1{
+                        margin-bottom: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.laracast-section{
+    
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 0 20px;
+    position: relative;
+    .redcircle-4{
+        background-image: radial-gradient(50% 50% at 50% 50%,#EB4432 0%,rgba(255,255,255,0) 100%);
+        width: 640px;
+        height: 640px;
+        position: absolute;
+        opacity: .15;
+        top: 0rem;
+        
+        left: -20%;
+    }
+  
+    .main-container{
+        display: grid;
+        
+        gap: 40px;
+        padding-top: 200px;
+       
+        .divider{
+           display: flex;
+           align-items: center;
+            .text-container{
+                h1{
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    font-weight: 700;
+                }
+                p{
+                    text-align: start;
+                    font-size: 16px;
+                    margin-bottom: 30px;
+                    color: #565454;
+                }
+                div{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    row-gap: 40px;
+                    div{
+                        display: grid;
+                        grid-template-columns: 1fr 4fr;
+                        gap: 5px;
+                        align-items: center;
+                    }
+                    svg{
+                        
+                        color: $laravelRed;
+                        max-width: 2rem;
+                    }
+                }
+            }
+           
+        }
+        
+    }
+
+    .islandDiv{
+        display: flex;
+        justify-content: flex-end;
+        .main-div{
+            border: 1px solid $laravelRed;
+            padding: 48px;
+            padding-top: 32px;
+            transform: rotate(-1deg);
+            .text-container{
+                max-width: 300px;
+                margin-top: 40px;
+                
+                .laracast{
+                    color: #565454;
+                    font-size: 14px;
+                    font-weight: normal;
+                   
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $laravelRed;
+                    margin-bottom: 10px;
+                }
+                .tune{
+                    font-size: 36px;
+                    font-weight: 700;
+                    margin-bottom: 30px;
+                }
+                .red-box{
+                   margin-top: 30px;
+                    display:block;
+                    border: 1px solid $laravelRed;
+                    padding: 8px;
+                    max-width: 200px;
+                    line-height: 20px;
+                    color: $laravelRed;
+                    text-align: center;
+                }
+            }
+            img{
+                max-width: 240px;
+            }
+        }
+    }
+}
+
+.partner-section{
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 1280px;
+    padding: 0 20px;
+    .partner-grid{
+       row-gap:30px ;
+        .display-flexd{
+            display: flex;
+            width: 100%;
+            
+            
+            div{
+                p{
+                    font-size: 14px;
+                    color: rgb(86, 84, 84);
+                }
+                .red-box{
+                    border: 1px solid $laravelRed;
+                    width: 200px;
+                    padding: 8px;
+                    color: $laravelRed;
+                    font-weight: 700;
+                }
+            }
+        }
+        .flex-img{
+            display: flex;
+            justify-content: center;
+            img{
+                transform: rotate(1deg);
+                max-width: 480px;
+            }
+            
+        }
+    }
+}
+
+footer{
+    margin: 0 auto;
+    margin-top: 300px;
+    max-width: 1536px;
+    padding: 0 20px;
+    .footer-section{
+        .logomark{
+            img{
+                width: 60px;
+            }
+        }
+        .main-gridF{
+            margin-top: 50px;
+            display: grid;
+            gap: 50px;
+            .text-container{
+                font-size: 14px;
+                color: rgb(86, 84, 84);
+                p{
+                    max-width: 24rem;
+                }
+            }
+            .primary-grid{
+                display: grid;
+                row-gap: 50px;
+                div{
+                    ul{
+                        font-size: 12px;
+                        display: grid;
+                        color: rgb(86, 84, 84);
+                        list-style: none;
+                        row-gap: 15px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+    .omo{
+        font-size: 12px;
+        color: rgb(86, 84, 84);
+    }
+}
