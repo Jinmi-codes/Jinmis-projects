@@ -1,0 +1,107 @@
+@import 'queries';
+
+header{
+    
+    nav{
+        padding-top: 15px;
+        .nav-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                column-gap:20px;
+                align-items: center;
+                justify-content: center;
+                
+                padding-bottom: 15px;
+                padding-left: 0;
+                
+                line-height: auto;
+                text-align: center;
+                li{
+                    font-size: 1.2rem;
+                    padding-right: none;
+                    a{
+                        text-decoration: none;
+                        color: #555555;
+                        padding-right: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        img{
+            max-height: 400px;
+            margin-top: 90px;
+        }
+    }
+}
+
+.product-grid{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px; 
+    margin-top: 100px;
+    font-family: vare;
+    
+    .product-container{
+        
+        .product{
+            display: flex;
+            flex-direction: column;
+            .text-container{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                hr{
+                    width: 25px;
+                    align-self: center;
+                }
+            }
+            .img-container{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 20px; 
+    margin-top: 100px;
+    
+    ul{
+        margin-top: 30px;
+       
+        list-style: none;
+        gap: 30px;
+        padding-top: 30px;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+        font-weight: 500;
+    } 
+   
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 10px;
+        svg{
+            max-width: 5rem;
+        }
+        display: flex;
+        gap: 10px;
+    }
+}
